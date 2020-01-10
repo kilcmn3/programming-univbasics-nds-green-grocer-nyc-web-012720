@@ -104,12 +104,11 @@ def checkout(cart, coupons)
   coupon_applied_cart = apply_coupons(consolidated_cart, coupons)
   clearance_applied_cart = apply_clearance(coupon_applied_cart)
 
-  i = 0
-  while i < clearance_applied_cart do
+
     grand_total = nil
-    if clearance_applied_cart[i][:count] > 0
+   clearance_applied_cart.each do |x|
+     x[:price]*x[:count] if x[:count] > 0
     grand_total = clearance_applied_cart[:price] * clearance_applied_cart[:count]
-  end
-  i += 1
+
 end
 end
