@@ -111,5 +111,6 @@ def checkout(cart, coupons)
     grand_total = clearance_applied_cart[:price] * clearance_applied_cart[:count]
     puts grand_total
   end
+  i += 1
 end
 end
