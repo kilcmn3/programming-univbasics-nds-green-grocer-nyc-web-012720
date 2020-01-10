@@ -43,19 +43,10 @@ def apply_coupons(cart, coupons)
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
-  # copy_cart = []
-  #
-  #   i = 0
-  # while i < coupons.length do
-  #    select_item = find_item_by_name_in_collection(coupons[i][:item], copy_cart)
-  #
-  #    hash_with_coupon[:item] = "#{coupons[i][:item]} W/COUPON"
-  #    hash_with_coupon[:price] = coupons[i][:num] / select_item[:count]
-  #    hash_with_coupon[:clearance] = select_item[:clearance]
-  #    hash_with_coupon[:count] = coupons[i][:num] > select_item[:count] ? coupons[i][:num] - select_item[:count]: coupons[i][:num]
-  #
-  # end
-  pp cart
+  i = 0
+  while i < cart.length do
+    cart_clone = cart[z].clone
+  end
 end
 
 def apply_clearance(cart)
