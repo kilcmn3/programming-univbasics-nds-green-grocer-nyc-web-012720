@@ -66,7 +66,7 @@ def apply_coupons(cart, coupons)
         end
       result << item_clone
     elsif find_by_item == nil
-      return result << cart[z]
+       result << cart[z]
     end
     z += 1
     end
