@@ -100,16 +100,7 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   result = []
-  i = 0
-    while i < cart.length
-      find_by_item = find_item_by_name_in_collection(cart[z][:item], result)
-      count_cart = consolidate_cart(cart)
-      if find_by_item != nil
-        result << cart[z]
-        count_cart
-      elsif
+  consolidated_cart = consolidate_cart(cart)
+  coupon_applied_cart = apply_coupons(consolidated_cart, [])
 
-      end
-      i += 1
-    end
 end
