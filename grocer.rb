@@ -106,7 +106,7 @@ def checkout(cart, coupons)
 
   clearance_applied_cart.each do |x|
      x[:price] * x[:count] if x[:count] > 0
-     pp x
+     puts x
      return x
 end
 
