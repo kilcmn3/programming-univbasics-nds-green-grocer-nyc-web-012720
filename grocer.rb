@@ -117,3 +117,4 @@ def checkout(cart, coupons)
   else
   return  grand_total
 end
+end
