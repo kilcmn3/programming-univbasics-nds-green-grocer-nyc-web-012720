@@ -108,7 +108,9 @@ def checkout(cart, coupons)
   grand_total = 0
 
   while i < clearance_applied_cart.length do
-    clearance_applied_cart[i][:price] * clearance_applied_cart[i][:count]
+  total = clearance_applied_cart[i][:price] * clearance_applied_cart[i][:count]
+    i += 1
+    grand_total = total
   end
 
 end
