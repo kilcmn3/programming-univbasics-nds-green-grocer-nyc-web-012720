@@ -49,7 +49,9 @@ def apply_coupons(cart, coupons)
     find_by_item = find_item_by_name_in_collection(cart[z][:item], coupons)
     if find_by_item != nil
       item_clone = cart[z].clone
+      item_clone[:item] = "#{cart[z][:item]} W/COUPON"
       result << cart[z]
+
 
     end
 
