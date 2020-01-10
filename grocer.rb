@@ -106,6 +106,7 @@ def checkout(cart, coupons)
 
   clearance_applied_cart.each do |x|
     grand_total = x[:price] * x[:count] if x[:count] > 0
+    puts grand_total
     return grand_total
 end
 end
