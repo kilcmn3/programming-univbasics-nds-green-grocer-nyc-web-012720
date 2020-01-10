@@ -51,15 +51,15 @@ def apply_coupons(cart, coupons)
       result << cart[z]
       item_clone = cart[z].clone
       item_clone[:item] = "#{cart[z][:item]} W/COUPON"
-      
+
       coupons_num = coupons.find {|x| x[:item] == cart[z][:item]}
         if coupons_num[:num] > cart[z][:count]
             item_clone[:count] = coupons_num[:num] - cart[z][:count]
           elsif coupons_num[:num] <= cart[z][:count]
             item_clone[:count] = coupons_num[:num]
         end
-      result 
-    
+      result
+
     end
 
     end
