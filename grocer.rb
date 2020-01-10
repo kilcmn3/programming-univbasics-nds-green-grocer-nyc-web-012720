@@ -34,7 +34,7 @@ new_array = []
       add_count[:count] += 1
     end
     z += 1
-  elsif find_by_item == nil
+  end
    new_array
 end
 
