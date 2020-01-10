@@ -108,7 +108,8 @@ def checkout(cart, coupons)
   while i < clearance_applied_cart do
     grand_total = nil
     if clearance_applied_cart[i][:count] > 0
-      clearance_applied_cart[:price] * clearance_applied_cart[:count]
+    grand_total = clearance_applied_cart[:price] * clearance_applied_cart[:count]
+       
 
   end
 end
