@@ -64,7 +64,7 @@ def apply_coupons(cart, coupons)
     end
     z += 1
     end
-    pp new_array
+    pp result
 end
 
 def apply_clearance(cart)
