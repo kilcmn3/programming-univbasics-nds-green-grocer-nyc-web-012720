@@ -46,7 +46,10 @@ def apply_coupons(cart, coupons)
   i = 0
   while i < cart.length do
     find_by_item = find_item_by_name_in_collection(cart[z][:item], coupons)
-    if
+    if find_by_item != nil
+      item_clone = cart[z].clone
+
+    end
 
     end
   end
