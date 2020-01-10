@@ -62,6 +62,7 @@ def apply_coupons(cart, coupons)
             cart_count[:count] = [final_count, 0].max
           elsif coupons_num[:num] <= cart[z][:count]
             item_clone[:count] = coupons_num[:num]
+            cart_count[:count] = cart[z][:count] - coupons_num[:num]
         end
       result << item_clone
     else
