@@ -104,9 +104,7 @@ def checkout(cart, coupons)
   coupon_applied_cart = apply_coupons(consolidated_cart, coupons)
   clearance_applied_cart = apply_clearance(coupon_applied_cart)
 
-
-    grand_total = nil
-   clearance_applied_cart.each do |x|
+  clearance_applied_cart.each do |x|
      x[:price] * x[:count] if x[:count] > 0
 
 
