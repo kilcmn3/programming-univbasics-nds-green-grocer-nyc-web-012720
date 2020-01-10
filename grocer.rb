@@ -105,6 +105,6 @@ def checkout(cart, coupons)
       find_by_item = find_item_by_name_in_collection(cart[z][:item], result)
       if find_by_item != nil
         result << cart[z]
-
+      end
     end
 end
