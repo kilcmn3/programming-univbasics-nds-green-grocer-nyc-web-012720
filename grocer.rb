@@ -101,4 +101,5 @@ def checkout(cart, coupons)
   # some irritated customers
   result = []
   find_by_item = find_item_by_name_in_collection(cart, coupons)
+    if find_by_item != nil
 end
