@@ -51,7 +51,7 @@ def apply_coupons(cart, coupons)
       result << cart[z]
       item_clone = cart[z].clone
       coupons_num = coupons.find {|x| x[:item] == cart[z][:item]}
-      cart_count = result.find {|x| x[:item] == cart[z][:item]}
+      cart_count = result.find {|y| y[:item] == cart[z][:item]}
 
       item_clone[:item] = "#{cart[z][:item]} W/COUPON"
       item_clone[:price] = coupons_num[:cost]/coupons_num[:num]
