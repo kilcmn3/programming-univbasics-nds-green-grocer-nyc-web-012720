@@ -100,6 +100,10 @@ def checkout(cart, coupons)
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
   result = []
-  find_by_item = find_item_by_name_in_collection(cart, coupons)
+  i = 0
+    while i < cart.length
+      find_by_item = find_item_by_name_in_collection(cart, coupons)
+
+    end
     if find_by_item != nil
 end
