@@ -62,7 +62,7 @@ def apply_coupons(cart, coupons)
     else
       cart
     end
-
+    z += 1
     end
 end
 
