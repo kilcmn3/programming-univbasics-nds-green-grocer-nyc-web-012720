@@ -53,6 +53,8 @@ def apply_coupons(cart, coupons)
       coupons_num = coupons.find {|x| x[:item] == cart[z][:item]}
         if coupons_num[:num] > cart[z][:count]
             item_clone[:count] = coupons_num[:num] - cart[z][:count]
+          elsif coupons_num[:num] <= cart[z][:count]
+
         end
       result << cart[z]
     end
