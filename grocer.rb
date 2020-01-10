@@ -54,7 +54,7 @@ def apply_coupons(cart, coupons)
         if coupons_num[:num] > cart[z][:count]
             item_clone[:count] = coupons_num[:num] - cart[z][:count]
           elsif coupons_num[:num] <= cart[z][:count]
-
+            item_clone[:count] = coupons_num[:num]
         end
       result << cart[z]
     end
