@@ -99,5 +99,6 @@ def checkout(cart, coupons)
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-  pp cart
+  result = []
+  find_by_item = find_item_by_name_in_collection(cart, coupons)
 end
