@@ -103,5 +103,10 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(result)
   coupon_applied_cart = apply_coupons(consolidated_cart, coupons)
   clearance_applied_cart = apply_clearance(coupon_applied_cart)
-pp clearance_applied_cart
+
+  i = 0
+  while i < clearance_applied_cart do
+    grand_total = nil
+
+  end
 end
