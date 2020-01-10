@@ -106,9 +106,9 @@ def checkout(cart, coupons)
 
   i = 0
   grand_total = 0
-  
+
   while i < clearance_applied_cart.length do
-      
+
   end
 
 end
