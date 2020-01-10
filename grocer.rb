@@ -106,5 +106,6 @@ def checkout(cart, coupons)
       if find_by_item != nil
         result << cart[z]
       end
+      i += 1
     end
 end
