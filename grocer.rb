@@ -112,5 +112,5 @@ def checkout(cart, coupons)
     i += 1
     grand_total = total
   end
-
+puts grand_total
 end
