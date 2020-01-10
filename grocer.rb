@@ -109,7 +109,6 @@ def checkout(cart, coupons)
     grand_total = nil
     if clearance_applied_cart[i][:count] > 0
     grand_total = clearance_applied_cart[:price] * clearance_applied_cart[:count]
-    puts grand_total
   end
   i += 1
 end
