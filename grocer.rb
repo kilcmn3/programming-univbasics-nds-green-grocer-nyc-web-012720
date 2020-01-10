@@ -101,6 +101,7 @@ def checkout(cart, coupons)
   # some irritated customers
   result = []
   consolidated_cart = consolidate_cart(cart)
+  coupon_applied_cart = apply_coupons(consolidated_cart, coupons)
 pp consolidated_cart
 
 end
