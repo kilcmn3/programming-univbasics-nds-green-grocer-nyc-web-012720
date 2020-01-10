@@ -50,10 +50,11 @@ def apply_coupons(cart, coupons)
     if find_by_item != nil
       result << cart[z]
       item_clone = cart[z].clone
-      item_clone[:item] = "#{cart[z][:item]} W/COUPON"
-      item_clone[:price]
-
       coupons_num = coupons.find {|x| x[:item] == cart[z][:item]}
+
+      item_clone[:item] = "#{cart[z][:item]} W/COUPON"
+      item_clone[:price] = coupons_num[:cost]/coupons_num[:num]
+
         if coupons_num[:num] > cart[z][:count]
             item_clone[:count] = coupons_num[:num] - cart[z][:count]
           elsif coupons_num[:num] <= cart[z][:count]
