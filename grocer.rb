@@ -65,7 +65,7 @@ def apply_coupons(cart, coupons)
             cart_count[:count] = cart[z][:count] - coupons_num[:num]
         end
       result << item_clone
-    else
+    elsif find_by_item == nil
       cart
     end
     z += 1
