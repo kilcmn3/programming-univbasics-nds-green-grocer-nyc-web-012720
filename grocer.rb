@@ -112,5 +112,5 @@ def checkout(cart, coupons)
     i += 1
     grand_total += total.round(2)
   end
-puts grand_total
+return grand_total
 end
