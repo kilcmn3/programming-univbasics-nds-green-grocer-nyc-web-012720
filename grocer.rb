@@ -48,15 +48,18 @@ def apply_coupons(cart, coupons)
   while i < cart.length do
     find_by_item = find_item_by_name_in_collection(cart[z][:item], coupons)
     if find_by_item != nil
+      result << cart[z]
       item_clone = cart[z].clone
       item_clone[:item] = "#{cart[z][:item]} W/COUPON"
+      
       coupons_num = coupons.find {|x| x[:item] == cart[z][:item]}
         if coupons_num[:num] > cart[z][:count]
             item_clone[:count] = coupons_num[:num] - cart[z][:count]
           elsif coupons_num[:num] <= cart[z][:count]
             item_clone[:count] = coupons_num[:num]
         end
-      result << cart[z]
+      result 
+    
     end
 
     end
