@@ -112,3 +112,4 @@ def checkout(cart, coupons)
     puts grand_total
   end
 end
+end
