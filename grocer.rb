@@ -108,5 +108,4 @@ def checkout(cart, coupons)
     grand_total = x[:price] * x[:count] if x[:count] > 0
     return grand_total
 end
-
 end
