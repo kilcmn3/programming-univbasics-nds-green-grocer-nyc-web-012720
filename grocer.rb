@@ -59,6 +59,8 @@ def apply_coupons(cart, coupons)
             item_clone[:count] = coupons_num[:num]
         end
       result << item_clone
+    else
+      cart
     end
 
     end
